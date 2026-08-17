@@ -73,19 +73,27 @@ body {
 
 .langswitch {
   margin-left: auto;
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
   display: flex;
-  align-items: baseline;
-  gap: 0.55rem;
-  color: var(--rule);
+  align-items: center;
+  gap: 0.7rem;
 }
 
-.langswitch a { color: var(--accent); }
+.langswitch a,
+.langswitch span { display: block; line-height: 0; }
 
-.langswitch [aria-current="true"] {
-  color: var(--ink);
-  font-weight: 600;
+.langswitch svg {
+  height: 15px;
+  width: auto;
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 2px;
+}
+
+.langswitch a svg { opacity: 0.42; transition: opacity 0.15s; }
+.langswitch a:hover svg { opacity: 1; }
+
+.langswitch [aria-current="true"] svg {
+  box-shadow: 0 0 0 2px var(--paper), 0 0 0 3px var(--ink);
 }
 
 @media (max-width: 62rem) {
