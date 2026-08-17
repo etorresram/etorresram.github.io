@@ -71,6 +71,27 @@ body {
   color: var(--faint);
 }
 
+.langswitch {
+  margin-left: auto;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  color: var(--rule);
+}
+
+.langswitch a { color: var(--accent); }
+
+.langswitch [aria-current="true"] {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+@media (max-width: 62rem) {
+  .langswitch { margin-left: 0; width: 100%; }
+}
+
 /* ---------- page frame ---------- */
 
 .page {
