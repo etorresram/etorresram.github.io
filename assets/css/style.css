@@ -166,12 +166,15 @@ main { max-width: 45rem; }
   .langswitch a, .langswitch span { padding: 0.8rem 0; }
   .langswitch svg { height: 18px; }
 
+  /* One column: drop the grid so the portrait can float and the text can
+     wrap beside it. A grid item would keep the float to itself. */
   .page {
-    grid-template-columns: 1fr;
+    display: block;
     padding: 1.6rem 1.2rem 3.5rem;
     max-width: 46rem;
   }
-  .rail { position: static; margin-bottom: 1.8rem; }
+  .rail { position: static; margin-bottom: 0; }
+  main { max-width: none; }
   .rail nav {
     display: flex;
     flex-wrap: wrap;
@@ -184,10 +187,12 @@ main { max-width: 45rem; }
   .rail nav a[aria-current="page"] { border-left: none; }
   .railblock { display: none; }
 
-  h1 { font-size: 1.45rem; margin-bottom: 1.2rem; }
-  h2 { margin-top: 2.3rem; }
+  h1 { font-size: 1.45rem; margin-bottom: 0.9rem; }
+  /* never let a section heading ride up alongside the portrait */
+  h2 { margin-top: 2.3rem; clear: left; }
   .reflist li { padding-left: 1.6rem; }
   .entry { margin-bottom: 1.7rem; }
+  footer { clear: left; }
 }
 
 /* ---------- headings and text ---------- */
@@ -257,7 +262,11 @@ li { margin-bottom: 0.45rem; }
 /* On one column the rail is full width, so cap the portrait explicitly.
    This rule must come after the base one to win. */
 @media (max-width: 62rem) {
-  .portrait { width: 8rem; margin: 0 0 0.4rem; }
+  .portrait {
+    float: left;
+    width: 7.5rem;
+    margin: 0.2rem 1.1rem 0.7rem 0;
+  }
 }
 
 /* ---------- entries (papers, projects) ---------- */
@@ -324,9 +333,18 @@ li { margin-bottom: 0.45rem; }
   padding-top: 0.1rem;
 }
 
+/* Stacked on narrow screens: the label needs real air under it, and each row
+   needs air between it and the next. */
 @media (max-width: 34rem) {
-  .facts li { display: block; }
-  .facts .key { margin-bottom: 0.1rem; }
+  .facts li { display: block; padding: 0.75rem 0; }
+  .facts .key {
+    display: block;
+    margin-bottom: 0.35rem;
+    padding-top: 0;
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
 }
 
 /* ---------- footer ---------- */
