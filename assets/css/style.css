@@ -336,18 +336,19 @@ li { margin-bottom: 0.45rem; }
   padding-top: 0.1rem;
 }
 
-/* Stacked on narrow screens: the label needs real air under it, and each row
-   needs air between it and the next. */
+/* On narrow screens the label runs inline with its value, as "EMAIL: value",
+   instead of sitting on its own line above it. */
 @media (max-width: 34rem) {
-  .facts li { display: block; padding: 0.75rem 0; }
+  .facts li { display: block; padding: 0.55rem 0; }
   .facts .key {
-    display: block;
-    margin-bottom: 0.35rem;
+    display: inline;
+    margin: 0 0.35rem 0 0;
     padding-top: 0;
     font-size: 0.78rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
   }
+  .facts .key::after { content: ":"; }
 }
 
 /* ---------- footer ---------- */
