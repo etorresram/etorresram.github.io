@@ -135,7 +135,7 @@ a:hover { text-decoration: underline; }
 
 .profile .name {
   font-family: var(--display);
-  font-size: 1.85rem;
+  font-size: 2.15rem;
   font-weight: 400;
   letter-spacing: -0.015em;
   line-height: 1.2;
@@ -143,13 +143,14 @@ a:hover { text-decoration: underline; }
 }
 
 .profile .role {
+  font-family: var(--display);
   color: var(--muted);
   font-size: 1rem;
   line-height: 1.45;
   margin: 0 0 0.35rem;
 }
 
-.profile .place { font-size: 1rem; margin: 0.7rem 0 0; }
+.profile .place { font-family: var(--display); font-size: 1rem; margin: 0.7rem 0 0; }
 
 .icons {
   display: flex;
@@ -188,9 +189,14 @@ h1.light { font-weight: 400; }
   grid-column: 1;
   grid-row: 1;
   align-self: start;
+  font-weight: 400;
   font-size: 2.1rem;
+  line-height: 1.25;
   margin: 0;
 }
+
+/* the text column starts at the same line as the section title */
+.col-main > :first-child { margin-top: 0; }
 
 h2 {
   font-size: 1.45rem;
