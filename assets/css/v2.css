@@ -37,7 +37,7 @@ body {
   color: var(--ink);
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
                "Helvetica Neue", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.62;
   -webkit-font-smoothing: antialiased;
   overflow-wrap: break-word;
@@ -84,8 +84,9 @@ a:hover { text-decoration: underline; }
   min-width: 0;
   flex-wrap: wrap;
 }
-.topnav a { color: var(--muted); }
+.topnav a { color: var(--muted); transition: color 0.15s; }
 .topnav a:hover { color: var(--accent); text-decoration: none; }
+.topnav a.active { color: var(--accent); font-weight: 600; }
 
 .langswitch { margin-left: auto; display: flex; align-items: center; gap: 0.6rem; }
 .langswitch a, .langswitch span { display: block; line-height: 0; }
@@ -261,7 +262,7 @@ footer {
 }
 
 @media (max-width: 52rem) {
-  body { font-size: 17px; }
+  body { font-size: 16px; }
   .topbar-inner { height: auto; padding: 0.9rem 1.2rem; flex-wrap: wrap; gap: 0.5rem 1.2rem; }
   .topnav { order: 3; flex-basis: 100%; gap: 0.35rem 1.1rem; font-size: 0.94rem; }
   .langswitch { order: 2; }
