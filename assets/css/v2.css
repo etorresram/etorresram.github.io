@@ -102,7 +102,7 @@ a:hover { text-decoration: underline; }
 
 /* ---------- sections ---------- */
 
-.band { background: var(--paper); border-bottom: 1px solid var(--rule); }
+.band { background: var(--paper); border-bottom: 1px solid var(--rule); scroll-margin-top: 4.2rem; }
 .band:nth-of-type(even) { background: var(--band); }
 
 .wrap {
