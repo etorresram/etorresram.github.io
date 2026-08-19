@@ -4,102 +4,420 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Eric Torres · Economista laboral</title>
-<meta name="description" content="Eric Torres es estudiante de doctorado en Economía en la PUCP y consultor en economía del Banco Interamericano de Desarrollo. Trabaja en mercados laborales, futuro del trabajo, inteligencia artificial y protección social en América Latina.">
-<link rel="alternate" hreflang="en" href="../index.html">
-<link rel="stylesheet" href="../assets/css/style.css?v=5">
+<meta name="description" content="Eric Torres es estudiante de doctorado en Economía en la PUCP y consultor en economía del Banco Interamericano de Desarrollo. Trabaja sobre mercados laborales, futuro del trabajo, inteligencia artificial y protección social en América Latina.">
+<link rel="alternate" hreflang="en" href="../">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../assets/css/style.css?v=9">
 </head>
-<body class="about">
+<body>
 
-<header class="sitehead">
-  <div class="sitehead-inner">
-    <a class="name" href="index.html">Eric Torres</a>
-    <span class="tagline">Economista laboral · Lima, Perú</span>
-  <nav class="langswitch" aria-label="Idioma">
-    <a href="../index.html" hreflang="en" lang="en" title="English" aria-label="English"><svg viewBox="0 0 60 30" aria-hidden="true" focusable="false"><clipPath id="uk-index"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#uk-index)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg></a>
-    <span aria-current="true" title="Español"><svg viewBox="0 0 60 40" aria-hidden="true" focusable="false"><path d="M0,0 h60 v40 h-60 z" fill="#AA151B"/><path d="M0,10 h60 v20 h-60 z" fill="#F1BF00"/></svg></span>
-  </nav>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#about">Eric Torres</a>
+    <nav class="topnav">
+      <a href="#about">Perfil</a>
+      <a href="#research">Investigación</a>
+      <a href="#publications">Publicaciones</a>
+      <a href="#notes">Notas de estudio</a>
+      <a href="#beyond">Más allá de la economía</a>
+      <a href="../files/eric-torres-cv.pdf" target="_blank" rel="noopener">CV</a>
+    </nav>
+    <nav class="langswitch" aria-label="Idioma">
+      <a href="../" hreflang="en" lang="en" title="English" aria-label="English"><svg viewBox="0 0 60 30" aria-hidden="true" focusable="false"><clipPath id="uk"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#uk)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg></a>
+      <span aria-current="true" title="Español"><svg viewBox="0 0 60 40" aria-hidden="true" focusable="false"><path d="M0,0 h60 v40 h-60 z" fill="#AA151B"/><path d="M0,10 h60 v20 h-60 z" fill="#F1BF00"/></svg></span>
+    </nav>
   </div>
 </header>
 
-<div class="page">
+<!-- ============ perfil ============ -->
+<section class="band" id="about">
+  <div class="wrap">
 
-<aside class="rail">
-  <nav>
-    <a href="index.html" aria-current="page">Perfil</a>
-    <a href="research.html">Investigación</a>
-    <a href="publications.html">Publicaciones</a>
-    <a href="notes.html">Notas de estudio</a>
-    <a href="beyond.html">Más allá de la economía</a>
-    <a href="../files/eric-torres-cv.pdf" target="_blank" rel="noopener">Curriculum vitae</a>
-  </nav>
-  <img class="portrait" src="../assets/img/eric-torres.jpg" alt="Retrato de Eric Torres">
-  <div class="railblock">
-    <p>Estudiante de doctorado en Economía<br>Pontificia Universidad Católica del Perú</p>
-    <p>Consultor en economía<br>Banco Interamericano de Desarrollo</p>
-    <p>Profesor a tiempo parcial<br>Escuela de Posgrado, Universidad Peruana de Ciencias Aplicadas</p>
-    <p><a href="mailto:eric.torres@pucp.edu.pe">eric.torres@pucp.edu.pe</a></p>
+    <aside class="profile">
+      <img src="../assets/img/eric-torres.jpg" alt="Retrato de Eric Torres">
+      <p class="name">Eric Torres</p>
+      <p class="role">Estudiante de doctorado en Economía<br>Pontificia Universidad Católica del Perú</p>
+      <p class="role">Consultor en economía<br>Banco Interamericano de Desarrollo</p>
+      <p class="place">Lima, Perú</p>
+      <div class="icons">
+        <a href="mailto:eric.torres@pucp.edu.pe" title="Correo" aria-label="Correo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5v2.2z"/></svg></a>
+        <a href="https://github.com/etorresram" title="GitHub" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+        <a href="https://www.linkedin.com/in/etorresram/" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg></a>
+      </div>
+    </aside>
+
+    <div class="col-main">
+      <h1 class="light">Sobre mí</h1>
+
+      <p class="lede">
+        Soy economista con pasión por las matemáticas y los métodos cuantitativos en
+        economía. Mi trabajo pregunta qué le pasa a un trabajador cuando la demanda por lo
+        que hace cambia más rápido de lo que él puede moverse, y qué le deben los sistemas
+        de protección social cuando eso ocurre.
+      </p>
+
+      <p>
+        Casi toda mi investigación trata sobre los mercados laborales de América Latina,
+        donde cerca de la mitad de los trabajadores son informales, de modo que los márgenes
+        de ajuste habituales operan sobre solo una parte de la fuerza laboral. Mi tesis
+        doctoral, asesorada por Javier Olivera Angulo, estima el efecto causal de la
+        inteligencia artificial generativa sobre el empleo, los salarios y la informalidad
+        en ocho países de la región.
+      </p>
+
+      <p>
+        Soy consultor en economía en la División de Protección Social y Mercados Laborales
+        del Banco Interamericano de Desarrollo, y docente en la Escuela de Posgrado de la
+        Universidad Peruana de Ciencias Aplicadas. Antes trabajé en el BID en Washington,
+        DC, y durante siete años en el Banco Central.
+      </p>
+
+      <div class="duo">
+        <div>
+          <h2>Áreas de investigación</h2>
+          <ul>
+            <li>Mercados laborales en economías en desarrollo</li>
+            <li>Futuro del trabajo y cambio tecnológico</li>
+            <li>Inteligencia artificial y demanda de trabajo</li>
+            <li>Protección social: pensiones, transferencias, cobertura</li>
+            <li>Microeconometría aplicada y aprendizaje automático</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Formación</h2>
+          <ul class="timeline">
+            <li>
+              <span class="deg">Doctorado en Economía, 2026 a 2029</span>
+              <span class="where">Pontificia Universidad Católica del Perú</span>
+            </li>
+            <li>
+              <span class="deg">Maestría en Ciencia de Datos, 2023</span>
+              <span class="where">Universidad Peruana de Ciencias Aplicadas</span>
+            </li>
+            <li>
+              <span class="deg">Maestría en Análisis Económico, 2019</span>
+              <span class="where">Barcelona School of Economics, Universitat Pompeu Fabra</span>
+            </li>
+            <li>
+              <span class="deg">Licenciatura en Economía, 2013</span>
+              <span class="where">Universidad Nacional Pedro Ruiz Gallo</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
   </div>
-</aside>
+</section>
 
-<main>
+<!-- ============ investigación ============ -->
+<section class="band" id="research">
+  <div class="wrap">
+    <h1 class="sectitle">Investigación</h1>
+    <div class="col-main">
 
-  <h1>Perfil</h1>
+      <h2>Tesis doctoral</h2>
+      <div class="entry">
+        <p class="title">Generative AI and Labor Markets: Wages, Informality, and Causal
+          Evidence from Latin America</p>
+        <p class="meta">Tercera versión revisada, agosto de 2026 · Doctorado en Economía, PUCP<br>
+          Asesorada por Javier Olivera Angulo, Research Scientist del Luxembourg Institute of
+          Socio-Economic Research y Senior Economist del Banco Nacional de Bélgica</p>
+        <p>
+          Este artículo ofrece las primeras estimaciones causales del efecto de los modelos
+          grandes de lenguaje sobre el empleo y los salarios fuera de la OCDE: un diseño de
+          diferencias en diferencias con tratamiento continuo, estimado país por país sobre
+          encuestas de empleo armonizadas de ocho países de América Latina (2021 a 2025),
+          usando como dosis el índice de exposición ocupacional de Eloundou et al. Los
+          efectos agregados son heterogéneos y frágiles, y el empleo responde poco. La señal
+          sistemática es un precio: al construir los resultados por separado para
+          trabajadores formales e informales, la exposición reduce el salario mensual formal
+          en seis de los ocho países, mientras que los salarios informales suben en Brasil,
+          Colombia y Ecuador. Una prueba de composición a nivel individual ubica el ajuste en
+          el margen de entrada: el diferencial salarial entre entrantes y permanentes es
+          negativo y significativo en los cinco países con datos de antigüedad, y en Perú y
+          Brasil los ingresos de quienes ya estaban en el puesto no se mueven. La
+          descomposición entre formalidad e informalidad, que las economías de altos ingresos
+          donde se produjeron las estimaciones causales existentes no pueden sostener porque
+          sus sectores informales son marginales, es la contribución central.
+        </p>
+        <p class="note"><strong>Códigos JEL:</strong> J23, J31, O33, O54, D63, L86 ·
+          <strong>Palabras clave:</strong> IA generativa, modelos grandes de lenguaje,
+          demanda de trabajo, desigualdad salarial, informalidad, América Latina, diferencias
+          en diferencias</p>
+      </div>
 
-  <p class="lede">
-    Soy economista con pasión por las matemáticas y los métodos cuantitativos en economía.
-    Mi trabajo pregunta qué le pasa a un trabajador cuando la demanda por lo que hace cambia
-    más rápido de lo que él puede moverse, y qué le deben los sistemas de protección social
-    cuando eso ocurre.
-  </p>
+      <h2>Investigación de política en curso</h2>
+      <p class="note">Trabajo en curso en la División de Protección Social y Mercados
+        Laborales del Banco Interamericano de Desarrollo. Son proyectos no publicados; los
+        resultados no se difunden aquí.</p>
 
-  <p>
-    Casi toda mi investigación trata sobre los mercados laborales de América Latina, donde
-    cerca de la mitad de los trabajadores son informales, de modo que los márgenes de ajuste
-    habituales operan sobre solo una parte de la fuerza laboral. Mi tesis doctoral, asesorada
-    por Javier Olivera Angulo, estima el efecto causal de la inteligencia artificial
-    generativa sobre el empleo, los salarios y la informalidad en ocho países de la región.
-    <a href="research.html">Ver investigación</a>.
-  </p>
+      <div class="entry">
+        <p class="title">Riesgo de desplazamiento laboral por avances en IA en América Latina</p>
+        <p class="meta">En curso, 2026</p>
+        <p>
+          La exposición a la IA generativa es solo la mitad del riesgo que enfrenta un
+          trabajador; la otra mitad es si existe una salida factible hacia una ocupación
+          menos expuesta. Este proyecto mide la exposición junto con la capacidad de escape
+          en seis países de América Latina, usando trabajadores enlazados entre entrevistas
+          consecutivas de paneles rotativos de encuestas de empleo, y pregunta qué papel
+          juega la informalidad como vía de salida.
+        </p>
+      </div>
 
-  <p>
-    Soy consultor en economía en la División de Protección Social y Mercados Laborales del
-    Banco Interamericano de Desarrollo, y docente en la Escuela de Posgrado de la
-    Universidad Peruana de Ciencias Aplicadas. Antes trabajé en el BID en Washington, DC, y
-    durante siete años en el Banco Central de Reserva del Perú.
-  </p>
+      <div class="entry">
+        <p class="title">Transiciones laborales en Centroamérica</p>
+        <p class="meta">En curso, 2026</p>
+        <p>
+          La matriz exportadora de Centroamérica se ha desplazado hacia los instrumentos
+          médicos y hacia los cables y aparatos eléctricos. Este proyecto pregunta qué
+          ocupaciones sostienen esos sectores exportadores dinámicos, qué habilidades
+          requieren y qué tan expuestos están a la inteligencia artificial, combinando
+          encuestas de empleo de la región con datos de vacantes en línea del Observatorio
+          Laboral del BID.
+        </p>
+      </div>
 
-  <h2>Áreas de investigación</h2>
-  <ul>
-    <li>Mercados laborales en economías en desarrollo: informalidad, estructura salarial, movilidad ocupacional</li>
-    <li>Futuro del trabajo y cambio tecnológico</li>
-    <li>Inteligencia artificial y demanda de trabajo</li>
-    <li>Protección social frente a la disrupción laboral: pensiones, transferencias, cobertura</li>
-    <li>Microeconometría aplicada, aprendizaje automático y PLN para la medición del mercado laboral</li>
-  </ul>
+      <h2>Datos y código</h2>
+      <p class="note">Trabajo aplicado de aprendizaje automático y procesamiento de lenguaje
+        natural para la medición del mercado laboral, construido sobre todo con datos de
+        vacantes en línea y paneles de encuestas de empleo.</p>
+      <ul class="linklist">
+        <li><a href="https://github.com/etorresram/LPI-Prediction-with-MLModels">Predicción del Índice de Desempeño Logístico con modelos de aprendizaje automático</a></li>
+        <li><a href="https://github.com/etorresram/Fine-Tuning-an-LLM-for-Classification-in-Job-Postings">Ajuste fino de un LLM con una capa adicional para clasificación multiclase de sector económico</a></li>
+        <li><a href="https://github.com/etorresram/NLP-and-Embeddings-for-Economic-Sector-Classification-in-Small-Job-Posting-Data">PLN y embeddings para clasificación de sector económico en muestras pequeñas de vacantes</a></li>
+        <li><a href="https://github.com/etorresram/Unsupervised-Learning-Model-for-Job-Postings-Clustering-and-Skills-Identification">Modelo no supervisado para agrupar vacantes e identificar habilidades</a></li>
+        <li><a href="https://github.com/etorresram/Estimating-Labor-Markets-Transition-Probabilities">Estimación de probabilidades de transición laboral en Brasil con la PNADC</a></li>
+        <li><a href="https://github.com/etorresram/District-Level-Population-Trends-in-Peru">Tendencias poblacionales a nivel distrital en el Perú</a></li>
+        <li><a href="https://github.com/EL-BID/analytics_simulation_public_policy_scl">Simulador del impacto del alza de precios de alimentos sobre la pobreza en América Latina y el Caribe</a> (aplicación Shiny, BID)</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-  <h2>Formación</h2>
-  <ul class="facts">
-    <li><span class="key">2026–2029</span><span>Doctorado en Economía <em>(en curso)</em>, Pontificia Universidad Católica del Perú</span></li>
-    <li><span class="key">2021–2023</span><span>Maestría en Ciencia de Datos, Universidad Peruana de Ciencias Aplicadas</span></li>
-    <li><span class="key">2018–2019</span><span>Maestría en Análisis Económico, Barcelona School of Economics, Universitat Pompeu Fabra</span></li>
-    <li><span class="key">2008–2013</span><span>Licenciatura en Economía, Universidad Nacional Pedro Ruiz Gallo</span></li>
-  </ul>
+<!-- ============ publicaciones ============ -->
+<section class="band" id="publications">
+  <div class="wrap">
+    <h1 class="sectitle">Publicaciones destacadas</h1>
+    <div class="col-main">
 
-  <h2>Contacto</h2>
-  <ul class="facts">
-    <li><span class="key">Correo</span><span><a href="mailto:etorresram@gmail.com">etorresram@gmail.com</a></span></li>
-    <li><span class="key">Académico</span><span><a href="mailto:eric.torres@pucp.edu.pe">eric.torres@pucp.edu.pe</a></span></li>
-    <li><span class="key">GitHub</span><span><a href="https://github.com/etorresram">github.com/etorresram</a></span></li>
-    <li><span class="key">LinkedIn</span><span><a href="https://www.linkedin.com/in/etorresram/">linkedin.com/in/etorresram</a></span></li>
-    <li><span class="key">Ubicación</span><span>Lima, Perú</span></li>
-  </ul>
+      <h2>Artículos en revistas</h2>
+      <ul class="reflist">
+        <li><strong>Torres Ramirez, E.</strong>, Rosas, P. J., Gamarra-Vargas, N.,
+          Quispe-Farfán, P. H., y Cosio Borda, R. F. (2026).
+          <em>Predicting the Logistics Performance Index (LPI) with machine learning
+          methods.</em> Journal of Shipping and Trade.
+          <a href="https://doi.org/10.1186/s41072-026-00248-0">doi:10.1186/s41072-026-00248-0</a>
+          · <a href="https://github.com/etorresram/LPI-Prediction-with-MLModels">Código de replicación</a></li>
+      </ul>
+
+      <h2>Libros y capítulos</h2>
+      <ul class="reflist">
+        <li>Aranco, N., Stampini, M., Azuara, O., Goyeneche, L., Ibarrarán, P., Oliveira, D.,
+          Reyes, M., Savedoff, W., y <strong>Torres, E.</strong> (2022).
+          <em>Aging in Latin America and the Caribbean: Social Protection and Quality of Life
+          of Older Persons.</em> Banco Interamericano de Desarrollo.
+          <a href="https://doi.org/10.18235/0004287">doi:10.18235/0004287</a></li>
+        <li><strong>Torres, E.</strong> (2023). Coautor del capítulo 4, “Preparing the
+          Macroeconomic Terrain for Renewed Growth”, en el Informe Macroeconómico del BID.
+          <a href="https://doi.org/10.18235/0004780">doi:10.18235/0004780</a></li>
+        <li><strong>Torres, E.</strong> (2022). Coautor del recuadro 5.1, en
+          <em>From Recovery to Renaissance: Turning Crisis into Opportunity.</em>
+          Banco Interamericano de Desarrollo.
+          <a href="https://doi.org/10.18235/0004180">doi:10.18235/0004180</a></li>
+      </ul>
+
+      <h2>Publicaciones de política y notas técnicas</h2>
+      <ul class="reflist">
+        <li>Azuara, O., Ripani, L., y <strong>Torres, E.</strong> (2024).
+          <em>AI and the Increase of Productivity and Labor Inequality in Latin America:
+          Potential Impact of Large Language Models on the Latin American Workforce.</em>
+          Banco Interamericano de Desarrollo.
+          <a href="https://doi.org/10.18235/0013152">doi:10.18235/0013152</a></li>
+        <li>Bosch, M., Azuara, O., y <strong>Torres, E.</strong> (2023).
+          <em>Employment and Living Conditions of the Population over 50 in Latin
+          America.</em> Banco Interamericano de Desarrollo.
+          <a href="https://doi.org/10.18235/0005146">doi:10.18235/0005146</a></li>
+        <li>Azuara, O., y <strong>Torres, E.</strong> (2023).
+          <em>La pobreza laboral en América Latina y el Caribe.</em>
+          Banco Interamericano de Desarrollo.
+          <a href="https://doi.org/10.18235/0004923">doi:10.18235/0004923</a></li>
+        <li>Azuara, O., Mondragón, M., y <strong>Torres, E.</strong> (2022).
+          <em>LinkedIn in Latin America: A Rapid Transformation of the Labor Market Due to
+          the Pandemic?</em> Banco Interamericano de Desarrollo.
+          <a href="https://doi.org/10.18235/0004151">doi:10.18235/0004151</a></li>
+      </ul>
+
+      <h2>Otra investigación aplicada</h2>
+      <ul class="reflist">
+        <li>Palza, F., Del Pino, C., Rosas, F., Flores, G., y <strong>Torres, E.</strong>
+          (2024). <em>Medición y seguimiento de la calidad de llamadas de un call center
+          usando técnicas de procesamiento de lenguaje natural (NLP) en una farmacia
+          digital.</em> <a href="http://hdl.handle.net/10757/684763">hdl:10757/684763</a></li>
+        <li><strong>Torres, E.</strong> (2023). <em>Short-Term Effects of the Lockdown on the
+          Trujillo Real Estate Market: Price Analysis in an Implicit Valuation Model by
+          Attributes with Fixed Effects.</em>
+          <a href="https://repositorio.unprg.edu.pe/handle/20.500.12893/11579">Repositorio UNPRG</a></li>
+        <li>Armijos, M., Sahore, A., Sossou, D., y <strong>Torres, E.</strong> (2019).
+          <em>Ethnic Identity and Labor Market: Evidence from European Union Countries.</em>
+          <a href="http://portal.amelica.org/ameli/jatsRepo/392/3921933011/3921933011.pdf">PDF</a></li>
+        <li>Bosch, J., y <strong>Torres, E.</strong> (2019). <em>SSB Industry Partnerships:
+          Social Commitment or Commercial Agenda? A Panel Data Approach.</em> Tesis de
+          maestría, Barcelona School of Economics.
+          <a href="https://renati.sunedu.gob.pe/handle/renati/2321">RENATI</a></li>
+      </ul>
+
+      <h2>Distinciones</h2>
+      <ul class="facts">
+        <li><span class="key">2023</span><span><strong>Knowledge Excellence Award</strong>, Banco Interamericano de Desarrollo, categoría Política Pública, como coautor de <em>Aging in Latin America and the Caribbean</em></span></li>
+        <li><span class="key">2018</span><span>Beca completa del Banco Central de Reserva del Perú para estudios de posgrado en el exterior</span></li>
+        <li><span class="key">2013</span><span>Beca completa de OSITRAN, X Curso de Verano en Regulación de Infraestructura</span></li>
+        <li><span class="key">2012</span><span>Beca completa del Banco Central de Reserva del Perú, Curso de Extensión en Economía</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ notas ============ -->
+<section class="band" id="notes">
+  <div class="wrap">
+    <h1 class="sectitle">Notas de estudio</h1>
+    <div class="col-main">
+
+      <p class="lede">
+        Notas que he compilado a partir de libros de texto alineados con el propósito de cada
+        curso, reunidas en una secuencia única y autocontenida. Cada juego trabaja con la
+        bibliografía que figura en su portada y cierra cada capítulo con ejercicios tipo
+        examen.
+      </p>
+
+      <h2>Fundamentos de análisis real en economía</h2>
+      <div class="entry">
+        <p class="meta">Curso de posgrado · 2026 · PDF, 1,5 MB</p>
+        <p>
+          Parte de la lógica de proposiciones y cuantificadores y de las técnicas de
+          demostración que la acompañan, y luego construye conjuntos, funciones y
+          numerabilidad, los axiomas de los números reales, la desigualdad triangular, y el
+          supremo, el ínfimo y el axioma de completitud. De ahí pasa al espacio vectorial de
+          n dimensiones y sus normas, su equivalencia y la geometría de las bolas que
+          inducen, y cierra con sucesiones, convergencia y continuidad en ese espacio.
+        </p>
+        <p class="note">Trabajadas a partir de Alabiso y Weiss, Moroșanu, Pons, Ok, y Zorich.</p>
+        <p><a href="../files/notes/real-analysis-es.pdf">Notas (PDF)</a></p>
+      </div>
+
+      <h2>Concavidad y optimización en economía</h2>
+      <div class="entry">
+        <p class="meta">Curso de posgrado · 2026 · Diez capítulos · PDF, 2,6 MB</p>
+        <p>
+          Va desde los preliminares matemáticos que un curso de optimización da por sabidos
+          hasta la dualidad lagrangiana. La primera mitad cubre espacios vectoriales reales,
+          la topología del espacio de n dimensiones, cálculo diferencial hasta el hessiano y
+          el teorema de Taylor, formas cuadráticas y definitud, conjuntos convexos y afines,
+          estructura cónica con los teoremas de Carathéodory y Minkowski, e hiperplanos y los
+          teoremas de separación con el lema de Farkas. La segunda mitad cubre funciones
+          cóncavas y convexas, concavidad generalizada y el hessiano orlado,
+          subdiferenciabilidad, optimización sin restricciones, el teorema de
+          Karush-Kuhn-Tucker con sus cualificaciones de restricciones y la lectura económica
+          de los multiplicadores, y puntos de silla y dualidad fuerte.
+        </p>
+        <p>
+          Las aplicaciones económicas están resueltas, no solo mencionadas: el Segundo
+          Teorema del Bienestar demostrado por separación, la aversión al riesgo vía la
+          desigualdad de Jensen, mínimos cuadrados como proyección ortogonal, la minimización
+          de costos como dual de la producción, y un problema de agente principal.
+        </p>
+        <p class="note">Trabajadas a partir de Aragón, Goberna, López y Rodríguez; Boyd y
+          Vandenberghe; Brinkhuis; Li; Nocedal y Wright; Ruszczyński; Snyman y Wilke; y
+          Wright y Recht.</p>
+        <p><a href="../files/notes/concavity-optimization-es.pdf">Notas (PDF)</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ más allá ============ -->
+<section class="band" id="beyond">
+  <div class="wrap">
+    <h1 class="sectitle">Más allá de la economía</h1>
+    <div class="col-main">
+
+      <p class="lede">Algunas cosas que hago fuera del trabajo.</p>
+
+      <h2>Guitarra</h2>
+      <p>
+        Toco guitarra. Es el pasatiempo que he mantenido por más tiempo y me lo he llevado a
+        todas las ciudades donde he vivido.
+      </p>
+
+      <h2>Tabla</h2>
+      <p>
+        Corro tabla. Vivir en Lima ayuda: el mar queda cerca y las olas de la ciudad son
+        accesibles, así que sigue siendo un hábito y no una salida que haya que planear.
+      </p>
+
+      <h2>Además</h2>
+      <p>
+        También estudio matemática aplicada, que disfruto tanto por sí misma como por lo que
+        le aporta a mi investigación. Hablo español de nacimiento, inglés y portugués con
+        fluidez y francés básico.
+      </p>
+    </div>
+  </div>
+</section>
 
 <footer>
-  <p>Eric Torres · Lima, Perú · <a href="../files/eric-torres-cv.pdf" target="_blank" rel="noopener">Curriculum vitae (PDF, en inglés)</a></p>
+  <p>Eric Torres · Lima, Perú ·
+    <a href="../files/eric-torres-cv.pdf" target="_blank" rel="noopener">Curriculum vitae (PDF, en inglés)</a> ·
+    <a href="mailto:eric.torres@pucp.edu.pe">eric.torres@pucp.edu.pe</a></p>
 </footer>
 
-</main>
+<script>
+// Marca la sección actual en la barra superior, al hacer clic y al desplazarse.
+(function () {
+  var links = Array.prototype.slice.call(
+    document.querySelectorAll('.topnav a[href^="#"]'));
+  if (!links.length) return;
 
-</div>
+  var items = [];
+  links.forEach(function (a) {
+    var el = document.getElementById(a.getAttribute('href').slice(1));
+    if (el) items.push({ link: a, el: el });
+  });
+  if (!items.length) return;
+
+  function setActive(id) {
+    items.forEach(function (it) {
+      it.link.classList.toggle('active', it.el.id === id);
+    });
+  }
+
+  function current() {
+    var line = window.scrollY + window.innerHeight * 0.3;
+    var id = items[0].el.id;
+    items.forEach(function (it) {
+      if (it.el.offsetTop <= line) id = it.el.id;
+    });
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 4) {
+      id = items[items.length - 1].el.id;
+    }
+    return id;
+  }
+
+  var queued = false;
+  function update() {
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(function () { queued = false; setActive(current()); });
+  }
+
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  window.addEventListener('load', function () { setTimeout(update, 60); });
+  update();
+})();
+</script>
 </body>
 </html>
